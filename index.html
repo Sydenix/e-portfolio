@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Benoît Misplon</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <!-- <link href="img/favicon.ico" rel="icon"> -->
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
+        <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
+            <h2 class="mb-2 text-white">E-portofolio</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">A propos</a>
+                <a href="#parcours" class="nav-item nav-link">Mon Parcours</a>
+                <a href="#competences" class="nav-item nav-link">Compétences</a>
+                <a href="#projets" class="nav-item nav-link">Projets</a>
+                <a href="#footer" class="nav-item nav-link">Contact</a>
+            </div>
+            <h4 class="m-0 pe-lg-5 d-none d-lg-block"><i class="fa fa-headphones text-primary me-3"></i></h4>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative mb-5">
+            <div class="owl-carousel-item position-relative">
+                <img id="imgHeader" class="img-fluid" src="img/test.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">E-portfolio</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Benoît Misplon</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Bonjour, je me présente, je m'appelle
+                                    Benoît Misplon, actuellement en deuxième année de BUT informatique à l'université de
+                                    Lille à
+                                    Villeneuve d’ascq.
+                                    Je suis actuellement à la recherche d’un stage en informatique et plus particulièrement
+                                    dans le domaine du développement web, que
+                                    ce soit en front-end ou back-end.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div id="about" class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container about py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/moi.jpg"
+                            style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="text-secondary text-uppercase mb-3">A propos de moi</h6>
+                    <h1 class="mb-5">Benoît Misplon</h1>
+                    <h3 class="mb-5">Comment j'en suis arrivé là ?</h3>
+                    <p class="mb-5">Et bien c'est très simple, dès mon très jeune âge j'ai été bercé par les jeux vidéo et par
+                        mon frère qui est devenu développeur web.
+                        <br>Mon frère a été pour moi une source d'inspiration, j'ai donc très vite pris conscience que ce
+                        monde était fait pour moi.
+                    </p>
+                    <p class="mb-5">Durant ma formation de BUT informatique, j'ai pu acquérir de nouvelles compétences
+                        dans l'informatique.
+                        <br>J’ai pu y réaliser des projets en équipe comme, la réalisation d’un site web statique ou
+                        encore la réalisation d’un jeu en suivant la méthode agile.
+                    </p>
+
+                    <a href="./CV_Benoit_Misplon.pdf" target="_blank" class="btn btn-primary py-3 px-5">Télécharger Mon CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+     <!-- Parcours Start -->
+     <div id="parcours" class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase">Parcours</h6>
+                <h1 class="mb-5">Mon Parcours</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/logoiut.png" alt="">
+                        </div>
+                        <h4 class="mb-3">Bachelor Universitaire de Technologie Informatique</h4>
+                        <p>2021 - Aujourd'hui.</p>
+                        <p>A l'université de Lille, IUT A.</p>
+                        <p>Actuellement en 2 ème Année de BUT Informatique.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img id="lycee" class="img-fluid" src="img/lyceeeic.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">BAC général spécialités maths et NSI</h4>
+                        <p>2018 - 2021</p>
+                        <p>Au lycée EIC de Tourcoing</p>
+                        <p>Obtention du bac avec Mention Bien en 2021</p>
+                       
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Parcours End -->
+
+    <!-- Competences Start -->
+    <div id="competences" class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="text-secondary text-uppercase mb-3">Mes compétences</h6>
+                    <h1 class="mb-5">Compétences acquises</h1>
+                    <p class="mb-5">Ces compétences ont été acquises par le biais de plusieurs projets au sein de ma
+                        formation, mais aussi grâce à des projets personnels.
+                    </p>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-sm-6">
+                            <div class="bg-primary p-4 mb-4 wow fadeIn" data-wow-delay="0.3s">
+                                <i class="fa-brands fa-java fa-2x text-white mb-3"></i>
+                                <h2 class="text-white mb-2" data-toggle="counter-up">12</h2>
+                                <p class="text-white mb-0">Java</p>
+                            </div>
+                            <div class="bg-secondary p-4 wow fadeIn" data-wow-delay="0.5s">
+                                <i class="fa-brands fa-square-js fa-2x text-white mb-3"></i>
+                                <h2 class="text-white mb-2" data-toggle="counter-up">6</h2>
+                                <p class="text-white mb-0">JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="bg-success p-4 mb-4 wow fadeIn" data-wow-delay="0.3s">
+                                <i class="fa-solid fa-database fa-2x text-white mb-3"></i>
+                                <h2 class="text-white mb-2" data-toggle="counter-up">14</h2>
+                                <p class="text-white mb-0">SQL</p>
+                            </div>
+                            <div class="bg-primary p-4 wow fadeIn" data-wow-delay="0.5s">
+                                <i class="fa-brands fa-html5 fa-2x text-white mb-3"></i>
+                                <h2 class="text-white mb-2" data-toggle="counter-up">14</h2>
+                                <p class="text-white mb-0">HTML</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="bg-success p-4 mb-4 wow fadeIn" data-wow-delay="0.3s">
+                                <i class="fa-brands fa-css3-alt fa-2x text-white mb-3"></i>
+                                <h2 class="text-white mb-2" data-toggle="counter-up">13</h2>
+                                <p class="text-white mb-0">CSS</p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="bg-secondary p-4 mb-4 wow fadeIn" data-wow-delay="0.7s">
+                                <i class="fa-brands fa-git-alt fa-2x text-white mb-3"></i>
+                                <h2 class="text-white mb-2" data-toggle="counter-up">12</h2>
+                                <p class="text-white mb-0">GIT</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Competences End -->
+
+
+
+
+    <!-- Projets Start -->
+    <div id="projets" class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase">Projets</h6>
+                <h1 class="mb-5">Mes projets</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="price-item">
+                        <div class="border-bottom p-4 mb-4">
+                            <h5 class="text-primary mb-1">Création d'un site web statique</h5>
+                            <h1 class="display-5 mb-0">
+                                SuperGlyphe
+                            </h1>
+                            <img id="superglyphe" class="img-thumbnail" src="./img/superglyphe.PNG">
+                        </div>
+                        <div class="p-4 pt-0">
+                            <p><i class="fa fa-check text-success me-3"></i>Site statique</p>
+                            <p><i class="fa fa-check text-success me-3"></i>HTML5</p>
+                            <p><i class="fa fa-check text-success me-3"></i>CSS3</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Prise en charge de plusieurs navigateurs</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Replit</p>
+                            <p><i class="fa-solid fa-magnifying-glass fa-2x text-white mb-3"></i> <a href="https://superglyph.plsluck.repl.co/">Voir le site</a> </p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="price-item">
+                        <div class="border-bottom p-4 mb-4">
+                            <h5 class="text-primary mb-1">Création d'un outil de chargement, classification, affichage,
+                                et consultation d'un ensemble de données</h5>
+                            <h1 class="display-5 mb-0">
+                                CloudyClass
+                            </h1>
+                            <img id="cloudyclass" class="img-thumbnail" src="./img/CloudyClass.PNG">
+                        </div>
+                        <div class="p-4 pt-0">
+                            <p><i class="fa fa-check text-success me-3"></i>Java</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Javafx</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Maven</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Clean code (PMD, SonarQube)</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Design Pattern (MVC, Strategy, Factory, ...)</p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="price-item">
+                        <div class="border-bottom p-4 mb-4">
+                            <h5 class="text-primary mb-1">Création d'un site web statique avec la charte graphique de
+                                l'univérsité de Lille</h5>
+                            <h1 class="display-5 mb-0">
+                                Le Co-voiturage vert de l'Université de Lille
+                            </h1>
+                            <img class="img-thumbnail" src="./img/covoiturage.PNG">
+                        </div>
+                        <div class="p-4 pt-0">
+                            <p><i class="fa fa-check text-success me-3"></i>Site statique</p>
+                            <p><i class="fa fa-check text-success me-3"></i>HTML5</p>
+                            <p><i class="fa fa-check text-success me-3"></i>CSS3</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Prise en charge de plusieurs navigateurs</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Replit</p>
+                            <p><i class="fa-solid fa-magnifying-glass fa-2x text-white mb-3"></i> <a href="https://sae-105.misplonbenoit.repl.co/">Voir le site</a> </p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="price-item">
+                        <div class="border-bottom p-4 mb-4">
+                            <h5 class="text-primary mb-1">Réalisation d'un site web durant mon stage de Seconde</h5>
+                            <h1 class="display-5 mb-0">
+                                Site D.VA
+                            </h1>
+                            <img class="img-thumbnail" src="./img/siteStage.PNG">
+                        </div>
+                        <div class="p-4 pt-0">
+                            <p><i class="fa fa-check text-success me-3"></i>Site statique</p>
+                            <p><i class="fa fa-check text-success me-3"></i>HTML5</p>
+                            <p><i class="fa fa-check text-success me-3"></i>CSS3</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Mise en page adaptée</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Prise en charge de plusieurs navigateurs</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="price-item">
+                        <div class="border-bottom p-4 mb-4">
+                            <h5 class="text-primary mb-1">Création d'une base de données pour une ferme</h5>
+                            <h1 class="display-5 mb-0">
+                                Base de données
+                            </h1>
+                            <img class="img-thumbnail" src="./img/BDD.PNG">
+                        </div>
+                        <div class="p-4 pt-0">
+                            <p><i class="fa fa-check text-success me-3"></i>SQL</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Base de données</p>
+                            <p><i class="fa fa-check text-success me-3"></i>MCD</p>
+                            <p><i class="fa fa-check text-success me-3"></i>MLD</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Requêtes / Fromulaires / Etats</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="price-item">
+                        <div class="border-bottom p-4 mb-4">
+                            <h5 class="text-primary mb-1">Réalisation d'un jeu ludopédagogique en Ijava(version simplifié du java)</h5>
+                            <h1 class="display-5 mb-0">
+                                La Bataille
+                            </h1>
+                            <img class="img-thumbnail" src="./img/labataille.png">
+                        </div>
+                        <div class="p-4 pt-0">
+                            <p><i class="fa fa-check text-success me-3"></i>Ijava (version simplifié de java)</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Jeu ludopédagogique</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Algorithmie</p>
+                            
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projets End -->
+
+
+
+
+
+    <!-- Footer Start -->
+    <div id="footer" class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s"
+        style="margin-top: 6rem;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>06 34 08 93 90</p>
+                    <a href="mailto:benmisplon@outlook.com" class="mb-2"><i class="fa fa-envelope me-3"></i>benmisplon@outlook.com</a>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.linkedin.com/in/beno%C3%AEt-misplon-2a7817255/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Liens rapide</h4>
+                    <a class="btn btn-link" href="#about">A propos</a>
+                    <a class="btn btn-link" href="#parcours">Mon Parcours</a>
+                    <a class="btn btn-link" href="#competences">Mes Compétences</a>
+                    <a class="btn btn-link" href="#projets">Projets</a>
+                    <a class="btn btn-link" href="#projets">Expériences</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        Copyright © 2022 <a class="border-bottom" href="#">Benoît Misplon</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
