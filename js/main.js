@@ -84,7 +84,9 @@
 
 document.querySelector('.aAgar').addEventListener('click', event => {
     event.preventDefault();
-    document.querySelector('.pAgar').innerHTML = `Dungeon and Dragons est un jeu vidéo multijoueur free-to-play développé par Benoît Misplon et Antonin Duvauchel. Le joueur contrôle un cercle coloré représentant une cellule, dont le but est de grossir le plus possible en absorbant des cellules plus petites sans être à son tour absorbée par des cellules plus grosses.`;
+    document.querySelector('.pAgar').innerHTML = `Dungeon and Dragons est un jeu vidéo multijoueur free-to-play développé par Benoît Misplon et Antonin Duvauchel. Le joueur contrôle un cercle coloré représentant une cellule, dont le but est de grossir le plus possible en absorbant des cellules plus petites sans être à son tour absorbée par des cellules plus grosses.
+    Le jeu se présente sous la forme d'un plateau, vu de dessus, et sur lequel se rejoignent toutes les personnes connectées : chacun.e peut ainsi voir en temps réel les mouvements des autres participant.e.s.
+    `;
     document.querySelector('.aAgar').style.display = 'none';
 })
 document.querySelector('.aGlyphe').addEventListener('click', event => {
@@ -102,6 +104,15 @@ document.querySelector('.aCloudy').addEventListener('click', event => {
     La problématique professionnelle etait de mettre en place l'organisation du projet et de créer, en équipe, une application en suivant une démarche de développement itérative et incrémentale. En partant d'un besoin décrit de manière imprécise ou incomplète par un client, l'objectif est de clarifier, compléter, collecter et formaliser le besoin, puis de développer une application communicante intégrant la manipulation des données et respectant les paradigmes de qualité (ergonomie des IHM, qualité logicielle…).
     `;
     document.querySelector('.aCloudy').style.display = 'none';
+})
+
+document.querySelector('.aUniv').addEventListener('click', event => {
+    event.preventDefault();
+    document.querySelector('.pUniv').innerHTML = `
+Il s'agit d'un site web permettant la mise en place d'un système de co-voiturage et de location entre les étudiants et le personnel de l'université de Lille. Ce projet a été réalisé en binome , il s'agit simplement d'un site vitrine.
+   
+    `;
+    document.querySelector('.aUniv').style.display = 'none';
 })
 
 
