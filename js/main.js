@@ -115,5 +115,14 @@ Il s'agit d'un site web permettant la mise en place d'un système de co-voiturag
     document.querySelector('.aUniv').style.display = 'none';
 })
 
+document.querySelector('.aRest').addEventListener('click', event => {
+    event.preventDefault();
+    document.querySelector('.pRest').innerHTML = `
+    Réalisation de l'API Rest d'une pizzeria en Java. Requêtes GET/POST/PATCH/DELETE mises en place avec un lien à une base de données PostgreSQL.
+    Gestion des ingrédients, pizzas et des commandes. Sécurisation de l'API avec un système de gestion d'authentification avec une basic authent.
+    `;
+    document.querySelector('.aRest').style.display = 'none';
+})
+
 
 
