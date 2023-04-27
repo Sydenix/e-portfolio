@@ -86,7 +86,7 @@ const first = document.getElementById('1er');
 const seconde = document.getElementById('2eme');
 const third = document.getElementById('3eme');
 const fourth = document.getElementById('4eme');
-const fivth = document.getElementById('5eme');
+const fifth = document.getElementById('5eme');
 const sixth = document.getElementById('6eme');
 const seventh = document.getElementById('7eme');
 const eighth = document.getElementById('8eme');
@@ -94,7 +94,7 @@ const eighth = document.getElementById('8eme');
     popup(seconde);
     popup(third);
     popup(fourth);
-    popup(fivth);
+    popup(fifth);
     popup(sixth);
     popup(seventh);
     popup(eighth);
@@ -119,6 +119,7 @@ const eighth = document.getElementById('8eme');
         exit.classList.add('hidden');
     })
 }
+
 document.querySelector('.aAgar').addEventListener('click', event => {
     event.preventDefault();
     event.stopPropagation();
