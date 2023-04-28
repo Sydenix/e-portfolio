@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -24,36 +24,36 @@
             $('.sticky-top').css('top', '-100px');
         }
     });
-    
-    
+
+
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");
     const $dropdownToggle = $(".dropdown-toggle");
     const $dropdownMenu = $(".dropdown-menu");
     const showClass = "show";
-    
-    $(window).on("load resize", function() {
+
+    $(window).on("load resize", function () {
         if (this.matchMedia("(min-width: 992px)").matches) {
             $dropdown.hover(
-            function() {
-                const $this = $(this);
-                $this.addClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "true");
-                $this.find($dropdownMenu).addClass(showClass);
-            },
-            function() {
-                const $this = $(this);
-                $this.removeClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "false");
-                $this.find($dropdownMenu).removeClass(showClass);
-            }
+                function () {
+                    const $this = $(this);
+                    $this.addClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "true");
+                    $this.find($dropdownMenu).addClass(showClass);
+                },
+                function () {
+                    const $this = $(this);
+                    $this.removeClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "false");
+                    $this.find($dropdownMenu).removeClass(showClass);
+                }
             );
         } else {
             $dropdown.off("mouseenter mouseleave");
         }
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -63,7 +63,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -75,49 +75,37 @@
     });
 
 
-    
 
 
-    
-    
+
+
+
 })(jQuery);
 
-const first = document.getElementById('1er');
-const seconde = document.getElementById('2eme');
-const third = document.getElementById('3eme');
-const fourth = document.getElementById('4eme');
-const fifth = document.getElementById('5eme');
-const sixth = document.getElementById('6eme');
-const seventh = document.getElementById('7eme');
-const eighth = document.getElementById('8eme');
-    popup(first);
-    popup(seconde);
-    popup(third);
-    popup(fourth);
-    popup(fifth);
-    popup(sixth);
-    popup(seventh);
-    popup(eighth);
-    
-    
-    function popup(popup){
+const popups = document.querySelectorAll('.project .col-md-6');
+popup(popups);
+
+function popup(popups) {
+    popups.forEach(popup => {
         popup.innerHTML += `
-        <btn id='exit' class="btn hidden exit btn-primary btn-lg-square rounded-0"><i class='bi bi-x-circle'></i></btn>
-        `
+            <btn id='exit' class="btn hidden exit btn-primary btn-lg-square rounded-0"><i class='bi bi-x-circle'></i></btn>
+            `
         const exit = popup.querySelector('.btn');
         popup.addEventListener('click', event => {
-        event.stopPropagation();
-        popup.classList.add('project-popup');
-        document.querySelector('body').style.overflow = 'hidden';
-        exit.classList.remove('hidden');
+            event.stopPropagation();
+            popup.classList.add('project-popup');
+            document.querySelector('body').style.overflow = 'hidden';
+            exit.classList.remove('hidden');
+
+        });
+        exit.addEventListener('click', event => {
+            event.stopPropagation();
+            event.preventDefault();
+            popup.classList.remove('project-popup');
+            document.querySelector('body').style.overflow = 'auto';
+            exit.classList.add('hidden');
+        })
     });
-    exit.addEventListener('click', event => {
-        event.stopPropagation();
-        event.preventDefault();
-        popup.classList.remove('project-popup');
-        document.querySelector('body').style.overflow = 'auto';
-        exit.classList.add('hidden');
-    })
 }
 
 document.querySelector('.aAgar').addEventListener('click', event => {
