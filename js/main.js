@@ -96,7 +96,6 @@ function popup(popups) {
             popup.classList.add('project-popup');
             document.querySelector('body').style.overflow = 'hidden';
             exit.classList.remove('hidden');
-
         });
         exit.addEventListener('click', event => {
             event.stopPropagation();
