@@ -86,7 +86,7 @@ const popups = document.querySelectorAll('.project .col-md-6');
 popup(popups);
 function popup(popups) {
     popups.forEach(popup => {
-        popup.innerHTML +=`
+        popup.innerHTML += `
             <btn id='exit' class="btn hidden exit btn-primary btn-lg-square rounded-0"><i class='bi bi-x-circle'></i></btn>
             `
         const exit = popup.querySelector('.btn');
@@ -95,6 +95,7 @@ function popup(popups) {
             popup.classList.add('project-popup');
             document.querySelector('body').style.overflow = 'hidden';
             popup.style.pointerEvents = 'auto';
+            popup.querySelector('.p-4.pt-0').style.backgroundColor = 'white';
             document.querySelector('body').style.pointerEvents = 'none';
             exit.classList.remove('hidden');
         });
@@ -105,7 +106,7 @@ function popup(popups) {
             document.querySelector('body').style.overflow = 'auto';
             document.querySelector('body').style.pointerEvents = 'auto';
             popup.style.pointerEvents = '';
-            
+
             exit.classList.add('hidden');
         })
     });
