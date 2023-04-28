@@ -84,10 +84,9 @@
 
 const popups = document.querySelectorAll('.project .col-md-6');
 popup(popups);
-
 function popup(popups) {
     popups.forEach(popup => {
-        popup.innerHTML += `
+        popup.innerHTML +=`
             <btn id='exit' class="btn hidden exit btn-primary btn-lg-square rounded-0"><i class='bi bi-x-circle'></i></btn>
             `
         const exit = popup.querySelector('.btn');
@@ -95,6 +94,8 @@ function popup(popups) {
             event.stopPropagation();
             popup.classList.add('project-popup');
             document.querySelector('body').style.overflow = 'hidden';
+            popup.style.pointerEvents = 'auto';
+            document.querySelector('body').style.pointerEvents = 'none';
             exit.classList.remove('hidden');
         });
         exit.addEventListener('click', event => {
@@ -102,6 +103,9 @@ function popup(popups) {
             event.preventDefault();
             popup.classList.remove('project-popup');
             document.querySelector('body').style.overflow = 'auto';
+            document.querySelector('body').style.pointerEvents = 'auto';
+            popup.style.pointerEvents = '';
+            
             exit.classList.add('hidden');
         })
     });
@@ -131,7 +135,6 @@ document.querySelector('.aUniv').addEventListener('click', event => {
     event.stopPropagation();
     document.querySelector('.pUniv').innerHTML = `
     Il s'agit d'un site web permettant la mise en place d'un système de co-voiturage et de location entre les étudiants et le personnel de l'université de Lille. Ce projet a été réalisé en binome , il s'agit simplement d'un site vitrine.
-    
     `;
     document.querySelector('.aUniv').style.display = 'none';
 })
@@ -154,3 +157,4 @@ document.querySelector('.aGlyphe').addEventListener('click', event => {
     `;
     document.querySelector('.aGlyphe').style.display = 'none';
 })
+
