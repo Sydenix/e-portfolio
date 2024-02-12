@@ -159,3 +159,31 @@ document.querySelector('.aGlyphe').addEventListener('click', event => {
     document.querySelector('.aGlyphe').style.display = 'none';
 })
 
+document.querySelector('.aPlanning').addEventListener('click', event => {
+    event.preventDefault();
+    event.stopPropagation();
+    document.querySelector('.pPlanning').innerHTML = `
+    A la manière de prendreunrendezvous, de Doctolib ou de nombreux sites de prise de rendez-vous mis en place
+    durant la crise COVID-19, l’objectif de ce projet consistez à réaliser un site internet de gestion de rendez-vous multiutilisateurs. Le site devait permettre d’une part de montrer aux utilisateurs les créneaux libres, d’autre part de permettre
+    aux utilisateurs de saisir et gérer leurs rendez-vous, et évidemment de n’autoriser des rendez-vous que s’ils respectent
+    les contraintes souhaitées pour ce site.
+    Le site devait donc impérativement s’appuyer sur de nombreux paramètres permettant l’expression de contraintes afin
+    de pouvoir être adapté à toutes les situations. Par exemple le planning de réservation des créneaux de piscine (avec la
+    contrainte “pas plus de 30 personnes par heure”) ou le planning de réservation de créneaux chez le médecin (avec la
+    contrainte “pas plus d’1 personne toutes les 15mn”).
+    `;
+    document.querySelector('.aPlanning').style.display = 'none';
+})
+
+document.querySelector('.aCodeWar').addEventListener('click', event => {
+    event.preventDefault();
+    event.stopPropagation();
+    document.querySelector('.pCodeWar').innerHTML = `
+    Le but du projet était d'implémenter tous les éléments nécessaires pour jouer au jeu "Code War". Le jeu consiste en une bataille entre processeurs. Chaque joueur doit écrire le programme qui s’exécutera sur un processeur.
+    CodeWar est un jeu opposant des programmes s’exécutant sur une architecture rudimentaire. Le « plateau » de jeu
+est constitué d’une grille de processeur qui exécutent chacun un programme. La table 1 illustre un plateau de jeu de
+256 processeurs répartis sur une grille de 16 × 16. Chaque processeur possède sa mémoire propre mais peut également
+adresser celle d’une partie des autres. La connexion de la grille est considérée thorique, c’est à dire que les processeurs
+    `;
+    document.querySelector('.aCodeWar').style.display = 'none';
+})
